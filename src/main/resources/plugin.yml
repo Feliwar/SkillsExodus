@@ -1,0 +1,23 @@
+name: ExodusSkills
+version: 1.0
+main: com.exodus.skills.ExodusSkills
+api-version: 1.21
+commands:
+  skills:
+    description: Muestra las habilidades del jugador
+    usage: /<command>
+permissions:
+  rpgskills.skill.fishing:
+    default: false
+  rpgskills.skill.magic:
+    default: false
+  rpgskills.skill.archery:
+    default: false
+  rpgskills.skill.alchemy:
+    default: false
+  rpgskills.skill.excavation:
+    default: false
+  rpgskills.skill.combat:
+    default: false
+  rpgskills.skill.defense:
+    default: false

@@ -1,0 +1,57 @@
+# Configuración del plugin ExodusSkills
+
+# Opciones generales
+general:
+  enable-sounds: true  # Activar o desactivar los sonidos al subir de nivel
+  enable-particles: true  # Activar o desactivar las partículas al subir de nivel
+  reward-item: DIAMOND_SWORD  # Objeto que el jugador recibe al subir de nivel (puede ser un ítem en formato de String)
+  particles:
+    level-up: "FIREWORKS_SPARK"  # Partícula que se usa al subir de nivel
+  sounds:
+    level-up: "ENTITY_PLAYER_LEVELUP"  # Sonido que se reproduce al subir de nivel
+
+# Configuración de experiencia
+experience:
+  base-xp-multiplier: 1.0  # Multiplicador base de la XP para calcular la experiencia necesaria
+  exponential-growth: true  # Activar el crecimiento exponencial de la experiencia
+  max-level: 50  # Nivel máximo alcanzable para cualquier habilidad
+
+# Habilidades iniciales
+skills:
+  # Habilidades que estarán disponibles al inicio
+  initial-skills:
+    - "FISHING"
+    - "MAGIC"
+    - "AGILITY"
+
+  # Habilidades desbloqueables con permisos
+  unlockable-skills:
+    "FIREBALL":
+      permission: "rpgskills.skill.fireball"
+      description: "Lanza bolas de fuego con poder destructivo."
+    "HEALING":
+      permission: "rpgskills.skill.healing"
+      description: "Te permite sanar a otros jugadores."
+    "SPEED":
+      permission: "rpgskills.skill.speed"
+      description: "Aumenta tu velocidad de movimiento."
+    # Puedes añadir más habilidades desbloqueables aquí
+
+# Configuración de efectos visuales
+visuals:
+  level-up-particle: "FIREWORKS_SPARK"  # Partícula que se usa al subir de nivel
+  level-up-sound: "ENTITY_PLAYER_LEVELUP"  # Sonido que se reproduce al subir de nivel
+  particle-count: 100  # Cantidad de partículas generadas al subir de nivel
+
+# Configuración de recompensas
+rewards:
+  enable-rewards: true  # Activar o desactivar recompensas al subir de nivel
+  reward-item: "DIAMOND_SWORD"  # Ítem que el jugador recibe como recompensa al subir de nivel
+  reward-quantity: 1  # Cantidad del ítem que se da como recompensa
+
+# Configuración de LuckPerms para habilitar habilidades desbloqueables
+permissions:
+  use-fishing: "rpgskills.skill.fishing"  # Permiso para desbloquear la habilidad de pesca
+  use-magic: "rpgskills.skill.magic"  # Permiso para desbloquear la habilidad de magia
+  use-agility: "rpgskills.skill.agility"  # Permiso para desbloquear la habilidad de agilidad
+  # (Puedes agregar más habilidades aquí)
